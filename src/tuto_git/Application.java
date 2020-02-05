@@ -20,6 +20,7 @@ public class Application extends Frame implements WindowListener{
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
 		
+		this.setTitle("COMMUNISME");
 		this.addWindowListener(this);
 		this.add(vue);
 		this.pack();
