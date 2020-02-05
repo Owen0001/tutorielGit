@@ -20,7 +20,11 @@ public class Application extends Frame implements WindowListener{
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
 		
+<<<<<<< HEAD
 		this.setTitle("infectéAS");
+=======
+		this.setTitle("infectéOwen");
+>>>>>>> 5cceafc79fbed8cd86c4aaa695ce83dbfefa702b
 		this.addWindowListener(this);
 		this.add(vue);
 		this.pack();
