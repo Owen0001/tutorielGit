@@ -1,8 +1,11 @@
 package tuto_git;
 
 import java.awt.Frame;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.awt.event.WindowStateListener;
 
-public class Application extends Frame {
+public class Application extends Frame implements WindowListener{
 
 	public static void main(String[] args) {
 		new Application();
@@ -17,9 +20,50 @@ public class Application extends Frame {
 		modl.addObserver(vue);
 		vue.addActionListener(ctrl);
 		
+		this.addWindowListener(this);
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
 	}
+	
+	@Override
+	public void windowClosing(WindowEvent e) {
+		System.exit(0);
+	}
 
+	@Override
+	public void windowActivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowClosed(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowIconified(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void windowOpened(WindowEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
 }
