@@ -26,6 +26,7 @@ public class Application extends Frame implements WindowListener{
 		this.pack();
 		this.setVisible(true);
 		setLocationRelativeTo(null);
+		this.setTitle("Un titre différent");
 	}
 	
 	@Override
